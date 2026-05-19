@@ -11,25 +11,55 @@ public class homeController {
     public String Inicio() {
         return "index";
     }
-     @GetMapping("/mision")
+
+    @GetMapping("/login")
+    public String Login() {
+        return "login";
+    }
+
+    @GetMapping("/home")
+    public String Home() {
+        return "home";
+    }
+
+    @GetMapping("/admin")
+    public String AdminHome() {
+        return "home";
+    }
+
+    @GetMapping("/docente")
+    public String DocenteHome() {
+        return "home";
+    }
+
+    @GetMapping("/vista-de-estudiantes")
+    public String EstudianteHome() {
+        return "vista-de-estudiantes";
+    }
+
+    @GetMapping("/mision")
     public String Mision() {
         return "mision";
     }
-     @GetMapping("/vision")
+
+    @GetMapping("/vision")
     public String Vision() {
         return "vision";
     }
-     @GetMapping("/servicios")
+
+    @GetMapping("/servicios")
     public String Servicios() {
         return "servicios";
     }
-     @GetMapping("/valores")
+
+    @GetMapping("/valores")
     public String Valores() {
         return "valores";
     }
-     @GetMapping("/eventos")
+
+    @GetMapping("/eventos")
     public String Eventos() {
         return "eventos";
     }
-    
 }
+

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RollerSpeed | Inicio</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body>
+<div class="page-layout home-page">
+    <section class="hero-panel">
+        <div class="hero-content">
+            <span class="hero-badge">RollerSpeed</span>
+            <h1>Bienvenido a tu centro de entrenamiento</h1>
+            <p>Desde aquí podrás ver tu avance, explorar nuevas clases y retomar tu sesión cuando quieras.</p>
+            <div class="hero-stats">
+                <div>
+                    <strong>+75%</strong>
+                    <span>Progreso semanal</span>
+                </div>
+                <div>
+                    <strong>8</strong>
+                    <span>Clases disponibles</span>
+                </div>
+                <div>
+                    <strong>24/7</strong>
+                    <span>Acceso al gym</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="home-panel">
+        <div class="home-card">
+            <div class="home-header">
+                <p class="eyebrow">Tu panel</p>
+                <h2>Has iniciado sesión correctamente 🎉</h2>
+                <p class="login-description">Sigue con tu entrenamiento, revisa tus progresos y elige tu siguiente desafío.</p>
+            </div>
+            <div class="home-grid">
+                <article class="home-widget">
+                    <h3>Sesiones activas</h3>
+                    <p>Tu última sesión fue un éxito. Continúa con el siguiente entrenamiento.</p>
+                </article>
+                <article class="home-widget">
+                    <h3>Objetivo semanal</h3>
+                    <p>Has completado 4 de 5 entrenamientos programados.</p>
+                </article>
+                <article class="home-widget">
+                    <h3>Recomendado</h3>
+                    <p>Prueba la clase de velocidad y técnica para mejorar tu postura.</p>
+                </article>
+            </div>
+            <div class="home-actions">
+                <a th:href="@{/logout}" class="secondary-button">Cerrar sesión</a>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
