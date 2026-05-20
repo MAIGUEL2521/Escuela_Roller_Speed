@@ -516,63 +516,53 @@ body {
 }
 
 .top-card {
-    position: relative;
+    background: #ffffff;
+    border: 1px solid #e8edf8;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 18px 40px rgba(23, 35, 61, 0.08);
+}
+
+.top-card-band {
+    height: 68px;
+    width: 100%;
+    display: block;
+}
+
+.top-card-band .band-content {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    min-height: 150px;
-    padding: 24px;
-    border-radius: 28px;
-    color: #fff;
-    overflow: hidden;
-    box-shadow: 0 24px 60px rgba(23, 35, 61, 0.08);
+    justify-content: center;
+    padding: 12px 18px;
+    height: 100%;
 }
 
-.top-card::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: rgba(255,255,255,0.08);
-    pointer-events: none;
-}
-
-.top-card span,
-.top-card .top-card-meta,
-.top-card .top-card-label {
-    position: relative;
-    z-index: 1;
+.top-card-body {
+    padding: 18px 20px;
+    color: #0d3c78;
 }
 
 .top-card-meta {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 800;
-    line-height: 1.05;
+    color: #ffffff;
 }
 
 .top-card-label {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 18px;
-    padding: 8px 14px;
+    display: inline-block;
+    margin-top: 8px;
+    padding: 6px 12px;
     border-radius: 999px;
-    font-size: 0.8rem;
-    letter-spacing: 0.08em;
+    font-size: 0.75rem;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
-    background: rgba(255,255,255,0.18);
+    background: rgba(255,255,255,0.12);
+    color: #fff;
 }
 
-.top-card-blue {
-    background: linear-gradient(180deg, #0d3c78 0%, #1648a1 100%);
-}
-
-.top-card-red {
-    background: linear-gradient(180deg, #c81f31 0%, #e34a5f 100%);
-}
-
-.top-card-grey {
-    background: linear-gradient(180deg, #4f5b78 0%, #2f3954 100%);
-}
+.top-card-band.top-card-blue { background: linear-gradient(180deg, #0d3c78 0%, #1648a1 100%); }
+.top-card-band.top-card-red { background: linear-gradient(180deg, #c81f31 0%, #e34a5f 100%); }
+.top-card-band.top-card-grey { background: linear-gradient(180deg, #4f5b78 0%, #2f3954 100%); }
 
 .student-panels {
     display: grid;

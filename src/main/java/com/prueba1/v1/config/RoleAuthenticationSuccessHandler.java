@@ -20,7 +20,7 @@ public class RoleAuthenticationSuccessHandler implements AuthenticationSuccessHa
 
         Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
 
-        String redirectUrl = "/home";
+        String redirectUrl = "/";
 
         for (GrantedAuthority g : authorities) {
             String role = g.getAuthority();

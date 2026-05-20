@@ -14,40 +14,63 @@
             <p>Elite Skating Academy</p>
         </div>
         <nav class="sidebar-nav">
-            <a href="#" class="active">Dashboard</a>
-            <a href="#">Users</a>
-            <a href="#">Students</a>
-            <a href="#">Teachers</a>
-            <a href="#">Groups</a>
+            <a href="#" class="active">panel de inicio</a>
+            <a href="#">Usuarios</a>
+            <a href="#">Estudiantes</a>
+            <a href="#">profesores</a>
+            <a href="#">Grupos</a>
         </nav>
-        <button class="sidebar-button">Register Student</button>
+        <button class="sidebar-button">Registrar estudiante</button>
         <div class="sidebar-footer">
-            <a href="#">Settings</a>
-            <a href="#">Support</a>
+            <a href="#">Configuracion</a>
+            <a href="#">Suporte</a>
         </div>
     </aside>
 
     <main class="student-main">
         <header class="student-main-header">
             <div>
-                <h1>Vista de Estudiantes</h1>
-                <p>Tu espacio de estudiante para ver tu grupo, horario y docente asignado.</p>
+                <h1>grupos asignados</h1>
+                <p>Aqui encontraras informacion para ver tu grupo, horario y docente asignado.</p>
             </div>
             <a th:href="@{/logout}" class="secondary-button logout-button">Cerrar sesión</a>
         </header>
 
         <section class="top-cards">
-            <article class="top-card top-card-blue">
-                <div class="top-card-meta">Speed Demons</div>
-                <div class="top-card-label">PRO LEVEL</div>
+            <article class="top-card">
+                <div class="top-card-band top-card-blue">
+                    <div class="band-content">
+                        <div class="top-card-meta">PATINADORES DE ELITE</div>
+                        <div class="top-card-label">PROFESIONALES</div>
+                    </div>
+                </div>
+                <div class="top-card-body">
+                    <!-- optional body content -->
+                </div>
             </article>
-            <article class="top-card top-card-red">
-                <div class="top-card-meta">Little Rollers A</div>
-                <div class="top-card-label">BEGINNER</div>
+
+            <article class="top-card">
+                <div class="top-card-band top-card-red">
+                    <div class="band-content">
+                        <div class="top-card-meta">PATINADORES JUNIOR A</div>
+                        <div class="top-card-label">PRINCIPIANTES</div>
+                    </div>
+                </div>
+                <div class="top-card-body">
+                    <!-- optional body content -->
+                </div>
             </article>
-            <article class="top-card top-card-grey">
-                <div class="top-card-meta">Urban Gliders</div>
-                <div class="top-card-label">INTERMEDIATE</div>
+
+            <article class="top-card">
+                <div class="top-card-band top-card-grey">
+                    <div class="band-content">
+                        <div class="top-card-meta">TAINADORES INTERMEDIOS</div>
+                        <div class="top-card-label">INTERMEDIO</div>
+                    </div>
+                </div>
+                <div class="top-card-body">
+                    <!-- optional body content -->
+                </div>
             </article>
         </section>
 
